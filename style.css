@@ -1,4 +1,22 @@
 h1 {
-    font-size: 10em;
-    color: rebeccapurple;
+    font-size: 5em;
+    color: palevioletred;
+    font-style: italic
+}
+
+h2 {
+    font-size: 3em;
+    color: palevioletred;
+    font-family: serif;
+}
+
+h3 {
+    font-size: 2em;
+    color: palevioletred;
+    font-family: serif;
+}
+
+p {
+    color: darkmagenta;
+    font-size: 1em;
 }
