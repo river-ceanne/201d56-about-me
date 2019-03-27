@@ -4,13 +4,12 @@
 var questions = ["Am I girl?","Do I like sushi?","Am I a coder?","Am I an Amazon employee?","Do I play an instrument?"];
 
 //Am I a girl?
-var answer = prompt(questions[0]);
-//answer = answer.toLowerCase;
+var answer = prompt(questions[0]).toLowerCase();
 if(answer != null || answer != ""){
-    if(answer == "y" || answer == "yes"){
+    if(answer === "y" || answer === "yes"){
         console.log("Correct answer was submitted");
         alert('You are right!!!');  
-    }else if(answer == "n" || answer == "no"){
+    }else if(answer === "n" || answer === "no"){
         console.log("Wrong answer was submitted");
         alert("Your answer is . . wrong!");
     }else{
@@ -21,13 +20,12 @@ if(answer != null || answer != ""){
 
 
 //Do I like Sushi?
-var answer = prompt(questions[1]);
-//answer = answer.toLowerCase;
+var answer = prompt(questions[1]).toLowerCase();
 if(answer != null || answer != ""){
-    if(answer == "y" || answer == "yes"){
+    if(answer === "y" || answer === "yes"){
         console.log("Correct answer was submitted");
         alert('You are right!!!');  
-    }else if(answer == "n" || answer == "no"){
+    }else if(answer === "n" || answer === "no"){
         console.log("Wrong answer was submitted");
         alert("Your answer is . . wrong!");
     }else{
@@ -37,13 +35,12 @@ if(answer != null || answer != ""){
 }
 
 //Am I a coder?
-var answer = prompt(questions[2]);
-//answer = answer.toLowerCase;
+var answer = prompt(questions[2]).toLowerCase();
 if(answer != null || answer != ""){
-    if(answer == "y" || answer == "yes"){
+    if(answer === "y" || answer === "yes"){
         console.log("Correct answer was submitted");
         alert('You are right!!!');  
-    }else if(answer == "n" || answer == "no"){
+    }else if(answer === "n" || answer === "no"){
         console.log("Wrong answer was submitted");
         alert("Your answer is . . wrong!");
     }else{
@@ -53,13 +50,12 @@ if(answer != null || answer != ""){
 }
 
 //Am I an Amazon Employee?
-var answer = prompt(questions[3]);
-//answer = answer.toLowerCase;
+var answer = prompt(questions[3]).toLowerCase();
 if(answer != null || answer != ""){
-    if(answer == "y" || answer == "yes"){
+    if(answer === "y" || answer === "yes"){
         console.log("Correct answer was submitted");
         alert('You are right!!!');  
-    }else if(answer == "n" || answer == "no"){
+    }else if(answer === "n" || answer === "no"){
         console.log("Wrong answer was submitted");
         alert("Your answer is . . wrong!");
     }else{
@@ -69,13 +65,13 @@ if(answer != null || answer != ""){
 }
 
 //Do I play an instrument?
-var answer = prompt(questions[4]);
-//answer = answer.toLowerCase;
+var answer = prompt(questions[4]).toLowerCase();
+
 if(answer != null || answer != ""){
-    if(answer == "y" || answer == "yes"){
+    if(answer === "y" || answer === "yes"){
         console.log("Correct answer was submitted");
         alert('You are right!!!');  
-    }else if(answer == "n" || answer == "no"){
+    }else if(answer === "n" || answer === "no"){
         console.log("Wrong answer was submitted");
         alert("Your answer is . . wrong!");
     }else{
