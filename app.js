@@ -5,12 +5,12 @@ var questions = ["Am I girl?","Do I like sushi?","Am I a coder?","Am I an Amazon
 
 //Am I a girl?
 var answer = prompt(questions[0]);
-answer = answer.toLowerCase;
+//answer = answer.toLowerCase;
 if(answer != null || answer != ""){
-    if(answer === "y" || answer === "yes"){
+    if(answer == "y" || answer == "yes"){
         console.log("Correct answer was submitted");
         alert('You are right!!!');  
-    }else if(answer === "n" || answer === "no"){
+    }else if(answer == "n" || answer == "no"){
         console.log("Wrong answer was submitted");
         alert("Your answer is . . wrong!");
     }else{
@@ -20,15 +20,66 @@ if(answer != null || answer != ""){
 }
 
 
-
-
 //Do I like Sushi?
+var answer = prompt(questions[1]);
+//answer = answer.toLowerCase;
+if(answer != null || answer != ""){
+    if(answer == "y" || answer == "yes"){
+        console.log("Correct answer was submitted");
+        alert('You are right!!!');  
+    }else if(answer == "n" || answer == "no"){
+        console.log("Wrong answer was submitted");
+        alert("Your answer is . . wrong!");
+    }else{
+        console.log("Invalid Answer");
+        alert("Your answer was invalid.");
+    }
+}
 
 //Am I a coder?
-
+var answer = prompt(questions[2]);
+//answer = answer.toLowerCase;
+if(answer != null || answer != ""){
+    if(answer == "y" || answer == "yes"){
+        console.log("Correct answer was submitted");
+        alert('You are right!!!');  
+    }else if(answer == "n" || answer == "no"){
+        console.log("Wrong answer was submitted");
+        alert("Your answer is . . wrong!");
+    }else{
+        console.log("Invalid Answer");
+        alert("Your answer was invalid.");
+    }
+}
 
 //Am I an Amazon Employee?
+var answer = prompt(questions[3]);
+//answer = answer.toLowerCase;
+if(answer != null || answer != ""){
+    if(answer == "y" || answer == "yes"){
+        console.log("Correct answer was submitted");
+        alert('You are right!!!');  
+    }else if(answer == "n" || answer == "no"){
+        console.log("Wrong answer was submitted");
+        alert("Your answer is . . wrong!");
+    }else{
+        console.log("Invalid Answer");
+        alert("Your answer was invalid.");
+    }
+}
 
 //Do I play an instrument?
-
-
+var answer = prompt(questions[4]);
+//answer = answer.toLowerCase;
+if(answer != null || answer != ""){
+    if(answer == "y" || answer == "yes"){
+        console.log("Correct answer was submitted");
+        alert('You are right!!!');  
+    }else if(answer == "n" || answer == "no"){
+        console.log("Wrong answer was submitted");
+        alert("Your answer is . . wrong!");
+    }else{
+        console.log("Invalid Answer");
+        alert("Your answer was invalid.");
+    }
+}
