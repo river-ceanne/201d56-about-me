@@ -1,7 +1,9 @@
 h1 {
     font-size: 5em;
     color: palevioletred;
-    font-style: italic
+    font-style: italic;
+    position: fixed;
+    padding: 5em;
 }
 
 h2 {
@@ -19,4 +21,8 @@ h3 {
 p {
     color: darkmagenta;
     font-size: 1em;
+}
+
+ul {
+    color: darkblue;
 }
