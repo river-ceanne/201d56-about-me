@@ -1,28 +1,33 @@
+body {
+    background-color: lightblue;
+  }
+
 h1 {
-    font-size: 5em;
+    font-size: 4em;
     color: palevioletred;
     font-style: italic;
-    position: fixed;
-    padding: 5em;
+    position: sticky;
+    text-align: center
 }
 
 h2 {
     font-size: 3em;
     color: palevioletred;
     font-family: serif;
+    text-align: center
 }
 
-h3 {
-    font-size: 2em;
-    color: palevioletred;
-    font-family: serif;
-}
 
 p {
     color: darkmagenta;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-family: serif;
+    text-align: center
+    
 }
 
 ul {
     color: darkblue;
+    padding-left: 30%;
 }
+

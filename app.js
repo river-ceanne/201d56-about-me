@@ -1,25 +1,34 @@
 
-//"use strict";
+"use strict";
 
-var questions = ['Am I girl?','Do I like sushi?','Am I a coder?','Am I an Amazon employee?','Do I play an instrument?'];
+var questions = ["Am I girl?","Do I like sushi?","Am I a coder?","Am I an Amazon employee?","Do I play an instrument?"];
 
-//var arraylength = questions.length;
+//Am I a girl?
+var answer = prompt(questions[0]);
+answer = answer.toLowerCase;
+if(answer != null || answer != ""){
+    if(answer === "y" || answer === "yes"){
+        console.log("Correct answer was submitted");
+        alert('You are right!!!');  
+    }else if(answer === "n" || answer === "no"){
+        console.log("Wrong answer was submitted");
+        alert("Your answer is . . wrong!");
+    }else{
+        console.log("Invalid Answer");
+        alert("Your answer was invalid.");
+    }
+}
 
-questions.forEach(element => {
 
-  var answer = prompt(element).toLowerCase;
 
-  if (answer === 'yes' || answer === 'y'){
-      console.log('You are right!!!');
-      alert('You are right!!!');
-  }else if(answer === null || answer === ''){
-      console.log('Your answer is blank.');
-      alert('Your answer is blank.');
-  }else{
-      console.log('You are wrong!');
-      alert('Your answer is wrong!');
-  }
 
-  answer = null;
+//Do I like Sushi?
 
-});
+//Am I a coder?
+
+
+//Am I an Amazon Employee?
+
+//Do I play an instrument?
+
+
