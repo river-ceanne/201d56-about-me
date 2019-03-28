@@ -61,22 +61,24 @@ for(var i = 0; i < 5; i++){
 
 while(numberTries != 0){
     reply = prompt(questions[5]).toLowerCase();
-    var counter = 0;
     var answerArr = answers[5];
-    while(counter < answerArr.length){
-        if(reply === answerArr[counter] || reply == answers[5]){
+        if(reply === answerArr){
             console.log("Correct answer was submitted");
-            alert('You are right!!!');  
+            alert('Nice! You are right!!!');  
             rightAnswersNum++;
             numberGuessed = true;
             break;
-        }else if(counter == answerArr.length - 1 && reply != answerArr[counter]){
+        }else if(reply != answerArr){
             console.log("Wrong answer was submitted");
-            alert("Your answer is . . wrong! Try Again!");
+            if(reply < answerArr){
+                alert("Your answer is too low! Try Again!");
+            }else if(reply > answerArr){
+                alert("Your answer is too high! Try Again!");
+            }else{
+                alert("Your answer is . . wrong! Invalid response. Try Again!");
+            }
+            
         }
-
-        counter++;
-    }
 
     if(numberGuessed){
         break;
