@@ -116,6 +116,7 @@ while(countryTries != 0){
     countryTries--;
     if(countryTries == 0){
         alert("You get no more tries for this question! Sorry T_T");
+        break;
     }
 }
 
