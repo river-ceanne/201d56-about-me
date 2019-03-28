@@ -78,13 +78,10 @@ function answerCount(){
     }else if(reply != answerArr){
       console.log("Wrong answer was submitted");
       replyHighOrLow(reply, answerArr);
-      
     }
-
     if(numberGuessed){
       break;
     }
-
     numberTries--;
     checkNumTries(numberTries);
   }
@@ -107,39 +104,6 @@ function checkNumTries(){
   }
 }
 
-// Saved for Reference:
-// while(numberTries != 0){
-//     reply = prompt(questions[5]).toLowerCase();
-//     var answerArr = answers[5];
-//         if(reply === answerArr){
-//             console.log("Correct answer was submitted");
-//             alert('Nice! You are right!!!');  
-//             rightAnswersNum++;
-//             numberGuessed = true;
-//             break;
-//         }else if(reply != answerArr){
-//             console.log("Wrong answer was submitted");
-//             if(reply < answerArr){
-//                 alert("Your answer is too low! Try Again!");
-//             }else if(reply > answerArr){
-//                 alert("Your answer is too high! Try Again!");
-//             }else{
-//                 alert("Your answer is . . wrong! Invalid response. Try Again!");
-//             }
-            
-//         }
-
-//     if(numberGuessed){
-//         break;
-//     }
-
-//     numberTries--;
-//     if(numberTries == 0){
-//         alert("You get no more tries for this question! Sorry T_T");
-//     }
-// }
-
-// Doug:
 function countryQuestion(){
   while(countryTries != 0){
     reply = prompt(questions[6]).toLowerCase();
@@ -155,49 +119,14 @@ function countryQuestion(){
       }else if(counter == answerArr.length - 1 && reply != answerArr[counter]){
         wrongAnswer(); 
       }
-
       counter++;
     }
-
     if(countryGuessed){
       break;
     }
-
     countryTries--;
     checkNumTries(countryTries);
   }
 }
-
-// Saved for Reference:
-// while(countryTries != 0){
-//     reply = prompt(questions[6]).toLowerCase();
-//     var counter = 0;
-//     var answerArr = answers[6];
-//     while(counter < answerArr.length){
-//         if(reply === answerArr[counter] || reply === answers[5]){
-//             console.log("Correct answer was submitted");
-//             alert('You are right!!!');  
-//             rightAnswersNum++;
-//             countryGuessed = true;
-//             break;
-//         }else if(counter == answerArr.length - 1 && reply != answerArr[counter]){
-//             console.log("Wrong answer was submitted");
-//             alert("Your answer is . . wrong! Try again!");
-//         }
-
-//         counter++;
-//     }
-
-//     if(countryGuessed){
-//         break;
-//     }
-
-//     countryTries--;
-//     if(countryTries == 0){
-//         alert("You get no more tries for this question! Sorry T_T");
-//         break;
-//     }
-// }
-
 
 alert("You got " + rightAnswersNum + " out of 7 questions right. ");
