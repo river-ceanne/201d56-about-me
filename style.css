@@ -34,7 +34,7 @@ p.header {
     
 }
 
-ul {
+ul,ol {
     color: darkblue;
     font-size: 1.5em;
     padding-left: 30%;
