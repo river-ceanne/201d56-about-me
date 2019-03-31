@@ -33,9 +33,7 @@ var answers = [
 ];
 
 var userName = prompt('Let\'s play a guessing game about me, but first tell me your name.');
-if(userName === null || userName === ''){
-  userName = 'anonymous person';
-}
+userName = checkUser(userName);
 alert('Welcome ' + userName + '! Let\'s proceed!');
 
 for(var i = 0; i < 5; i++){
@@ -53,7 +51,17 @@ for(var i = 0; i < 5; i++){
     counter++;
   }
 }
+
 answerCount();
+countryQuestion();
+alertScore();
+
+function checkUser(userName){
+  if(userName === null || userName === ''){
+    userName = 'anonymous person';
+  }
+  return userName;
+}
 
 function wrongAnswer(){
   console.log('Wrong answer was submitted');
@@ -84,7 +92,6 @@ function answerCount(){
     numberTries--;
     checkNumTries(numberTries);
   }
-  countryQuestion();
 }
 
 function replyHighOrLow(reply, answerArr){
@@ -128,4 +135,6 @@ function countryQuestion(){
   }
 }
 
-alert('You got ' + rightAnswersNum + ' out of 7 questions right. ');
+function alertScore(){
+  alert('You got ' + rightAnswersNum + ' out of 7 questions right. ');
+}
