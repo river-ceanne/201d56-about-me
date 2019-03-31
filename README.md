@@ -1,12 +1,9 @@
 # 201d56-about-me
 An about me page
-<<<<<<< HEAD
 # river-ceanne.github.io
-=======
 
 For Lab 4:
 Merge Commit: https://github.com/river-ceanne/201d56-about-me/commit/1d74d61f1fa8dd518a6083b37f3467525cca8df8
 Navigator: Reina Vencer || Driver: Doug Klemp
 
 Deployed on github pages : https://river-ceanne.github.io/201d56-about-me/
->>>>>>> 8dceba68e8a86756dd23d8492919ce512870ae8a
