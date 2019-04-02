@@ -33,28 +33,29 @@ var answers = [
 ];
 
 var userName = prompt('Let\'s play a guessing game about me, but first tell me your name.');
-userName = checkUser(userName);
-alert('Welcome ' + userName + '! Let\'s proceed!');
 
-for(var i = 0; i < 5; i++){
-  reply = prompt(questions[i]).toLowerCase();
-  var counter = 0;
-  var answerArr = answers[i];
-  while(counter < answerArr.length){
-    if(reply === answerArr[counter] || reply === answers[i]){
-      correctAnswer();
-      rightAnswersNum++;
-      break;
-    }else if(counter === answerArr.length - 1 && reply !== answerArr[counter]){
-      wrongAnswer();
-    }
-    counter++;
-  }
+function greeting(){
+  userName = checkUser(userName);
+  alert('Welcome ' + userName + '! Let\'s proceed!');
 }
 
-answerCount();
-countryQuestion();
-alertScore();
+function yesNoQues(){
+  for(var i = 0; i < 5; i++){
+    reply = prompt(questions[i]).toLowerCase();
+    var counter = 0;
+    var answerArr = answers[i];
+    while(counter < answerArr.length){
+      if(reply === answerArr[counter] || reply === answers[i]){
+        correctAnswer();
+        rightAnswersNum++;
+        break;
+      }else if(counter === answerArr.length - 1 && reply !== answerArr[counter]){
+        wrongAnswer();
+      }
+      counter++;
+    }
+  }
+}
 
 function checkUser(userName){
   if(userName === null || userName === ''){
@@ -138,3 +139,11 @@ function countryQuestion(){
 function alertScore(){
   alert('You got ' + rightAnswersNum + ' out of 7 questions right. ');
 }
+
+//////////FUNCTION CALLS/////////////////
+
+greeting();
+yesNoQues();
+answerCount();
+countryQuestion();
+alertScore();
